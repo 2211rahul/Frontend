@@ -18,18 +18,18 @@ export default function Contactus() {
       <div className="getintouch ">
         <div className="container text-center w-70 mt-5">
           <div className="titleGetInTouch">
-            <h3>Get InTouch</h3>
-            <span>touch the sky with glory that our aim so touch with us</span>
+           {/*  <h3>Get InTouch</h3>
+            <span>touch the sky with glory that our aim so touch with us</span> */}
             <div><i className="material-icons p-3" style={{ fontSize: "48px", color: "grey" }}>mail</i></div>
-            <p>rsmore2231@gmail.com</p>
+            <p>owccontactus@gmail.com</p>
           </div>
           <hr style={{ color: "red" }} />
 
           <div className="formGetInTouch">
             <div className="container mt-3 text-start">
-              <h3 className="mt-4">Send Me a Message</h3>
+              <h3 className="mt-4">Get In Touch</h3>
               <form className="p-4">
-                <div className="mb-3">
+                <div className="mb-4">
                   <input type="text" class="form-control" id="exampleInputPassword1" placeholder="name" onChange={(e)=>{}} />
                 </div>
                 <div className="mb-3">
