@@ -3,6 +3,7 @@ import { FaBeer } from 'react-icons/fa';
 import { BsFacebook , BsYoutube} from 'react-icons/bs';
 import { AiFillTwitterCircle} from 'react-icons/ai';
 import axios from "axios";
+import url from '../../config'
 
 export default function Contactus() {
   const [state,setstate]=useState({
@@ -56,7 +57,7 @@ export default function Contactus() {
                 </div>
                 <div className="mb-3">
                   <input type="email" name="email"
-                  value={state.email} class="form-control" id="exampleInputEmail1" placeholder="email" onChange={handler} />
+                  value={state.email} class="form-control" id="exampleInputEmail1" placeholder="enter your email" onChange={handler} />
                 </div>
                 <div className="mb-3">
                   <input type="text" name="subject" value={state.subject} class="form-control" id="exampleInputPassword1" placeholder="subject" onChange={handler} />
@@ -67,14 +68,20 @@ export default function Contactus() {
                    type="textarea"
 
                     class="form-control"
+                    value={state.desc}
                     
                     placeholder="Leave a message here"
                     id="floatingTextarea" onChange={handler}/>
                 </div>
                 <button onClick={()=>{
-                  axios.post( url.server+"/Contactus/contactus",state).then((res) => {
-                             
-                    alert("Your Response is Submitted We will get back to you")
+                  axios.post(url.server+"/Contactus/contactus",state).then((res) => {
+                    setstate({
+                      email:"",
+                      name:"",
+                      subject:"",
+                      desc:""
+                    });
+                    alert("Your Response is Submitted Thanks for Contact Us ")
                
 
                   })

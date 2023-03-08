@@ -38,7 +38,9 @@ function Homepage() {
      <Route path='/aboutus'component={Aboutus}/>
      <Route path='/home'component={Homepage1}/> 
      <Route path='/display'component={Display}/> 
+   
    <Route path='/contactus'component={Contactus }/> 
+
    <Route path='/add'component={Properties }/> 
 
      <Route path='/education'component={Education}/> 
@@ -60,7 +62,7 @@ function Homepage() {
 
      <Route path='/customize' component={Customize}/>
      <Route path='/order' component={Order}/>
- 
+     
      </Switch>
     
     

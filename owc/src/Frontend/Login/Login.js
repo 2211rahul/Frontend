@@ -37,15 +37,15 @@ export default function Login() {
           </div>
 
           <div className="form-outline mb-4">
-            <input  type="email" id="form3Example3" className="form-control "
+            <label for="form3Example3">Email address</label>
+            <input style={{backgroundColor:"white"}}  type="email" id="form3Example3" className="form-control "
                 name="email" value={user.email} onChange={ handler }   placeholder="Enter valid email address" />
-            {/* <label className="form-label" for="form3Example3">Email address</label> */}
           </div>
 
           <div className="form-outline mb-3">
-            <input type="password" id="form3Example4" className="form-control "
+            <label for="form3Example4">Password</label>
+            <input style={{backgroundColor:"white"}} type="password" id="form3Example4" className="form-control "
            name="password" value={user.password} onChange={handler} placeholder="Enter password" />
-            {/* <label className="form-label" for="form3Example4">Password</label> */}
           </div>
 
           <div className="d-flex justify-content-between align-items-center">
