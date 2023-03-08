@@ -68,7 +68,7 @@ export default function Customize() {
 
           <div className="formGetInTouch">
             <div className="container mt-3 text-start">
-              <h3 className="mt-4">Send Me a Message</h3>
+              <h3 className="mt-4">Enter Your Requirements</h3>
               <div className="p-4">
                 <div className="mb-3">
                   <input
@@ -88,7 +88,7 @@ export default function Customize() {
                     type="email"
                     class="form-control"
                     id="exampleInputEmail1"
-                    placeholder="email"
+                    placeholder="enter your email"
                     onChange={handler}
                   />
                 </div>
@@ -103,21 +103,29 @@ export default function Customize() {
                  onChange={handler} />
                 </div>
                 <div class="form-floating">
-                  <input
+                  <input type="textarea"
                    name="desc" 
-                   type="textarea"
+                   
 
                     class="form-control"
-                    
+                    value={state.desc}
                     placeholder="Leave a message here"
+
                     id="floatingTextarea"
-                onChange={handler}   ></input>
+                onChange={handler} ></input>
                 </div>
                 <button onClick={()=>{
 
                     axios.post( url.server+"/Custom/custom",state).then((res) => {
                              
                       alert("Your Response is Submitted We will get back to you")
+
+                     setstate({
+                        email:"",
+                        name:"",
+                        subject:"",
+                        desc:""
+                      });
                  
 
                     })

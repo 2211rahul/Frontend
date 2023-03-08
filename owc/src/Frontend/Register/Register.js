@@ -27,7 +27,7 @@ const registeration=()=>{
  if(name && email && password===repass && phoneno.length===10 || role){
   axios.post(url.server+"/User/user",user).then(()=>{alert(`Welcome ${user.name} to Owc ✌️✌️✌️` )
   history.push('/home')
- }).catch((err)=>console.log(err))
+ }).catch((err)=>alert(`Ohh someting 😓🤒 😵😵Went wrong mail is already register`))
   }
   else{
 
