@@ -318,9 +318,14 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: wheat;
-  opacity: 0.4;
-  z-index: 32;
-  /* height: 40vh; */
+  /* opacity: 0.6; */
+
 }
+.loginbox{
+  background-color: black;
+border-radius: 20px;
+color: wheat;
+}
+
+
 

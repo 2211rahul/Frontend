@@ -27,11 +27,11 @@ export default function Login() {
     return (
     <div>
 <section className="loginpage p-5" >
-  <div >
-    <div className="row d-flex justify-content align-items-center">
+  <div className=" d-flex justify-content-center">
+    
   
-      <div className="col-md-8 col-lg-6 col-xl-4 " >
-        <div>
+      <div className="d-flex justify-content-center" >
+        <div className='loginbox p-5'>
           <div className="d-flex flex-row align-items-center justify-content-center ">
             <h2 className="p-3 m-4">Sign in</h2>
           </div>
@@ -56,7 +56,7 @@ export default function Login() {
                 Remember me
               </label>
             </div>
-            <Link href="#" className="text-body" onClick={()=>{history.push('/Forgotpass')}}>Forgot password?</Link>
+            <Link href="#" className="text-danger p-4 " onClick={()=>{history.push('/Forgotpass')}}>Forgot password?</Link>
           </div>
 
           <div className="text-center text-lg-start mt-4 pt-2">
@@ -91,11 +91,11 @@ export default function Login() {
             }}type="button" className="btn btn-primary btn-lg"
               style={{"padding-left": "2.5rem", "padding-right": "2.5rem"}}>Login</button></Link>
             <p  className="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <label for="register"><span href="#!"
-               onClick={()=>{history.push('/register')}} className="link-danger" name='register'>Register</span></label></p>
+               onClick={()=>{history.push('/register')}} className="text-info p-5" name='register'>Register</span></label></p>
           </div>
 
         </div>
-      </div>
+      
     </div>
   </div>
   {/* <div

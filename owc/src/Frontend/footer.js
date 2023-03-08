@@ -22,20 +22,20 @@ export default function footer() {
               <h6>Categories</h6>
               <ul className="footer-links">
                 {/* <li><a href="http://scanfcode.com/category/c-language/">C</a></li> */}
-                <li><a href="http://localhost:3000/Display">Office Spaces</a></li>
-                <li><a href="http://localhost:3000/Desk">Desk Setups</a></li>
-                <li><a href="http://localhost:3000/Restaurant">Restaurant Setups</a></li>
-                <li><a href="http://localhost:3000/Education">Educational Classroom Setups</a></li>
-                <li><a href="http://localhost:3000/home">Templates</a></li>
+                <li><a href="https://cdac-project.onrender.com/Display">Office Spaces</a></li>
+                <li><a href="https://cdac-project.onrender.com/Desk">Desk Setups</a></li>
+                <li><a href="https://cdac-project.onrender.com/Restaurant">Restaurant Setups</a></li>
+                <li><a href="https://cdac-project.onrender.com/Education">Educational Classroom Setups</a></li>
+                <li><a href="https://cdac-project.onrender.com/home">Templates</a></li>
               </ul>
             </div>
 
             <div className="col-xs-6 col-md-3">
               <h6>Quick Links</h6>
               <ul className="footer-links">
-                <li><a href="http://localhost:3000/Aboutus">About Us</a></li>
-                <li><a href="http://localhost:3000/Contactus">Contact Us</a></li>
-                <li><a href="http://localhost:3000/Contactus">Contribute</a></li>
+                <li><a href="https://cdac-project.onrender.com/Aboutus">About Us</a></li>
+                <li><a href="https://cdac-project.onrender.com/Contactus">Contact Us</a></li>
+                <li><a href="https://cdac-project.onrender.com/Contactus">Contribute</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Sitemap</a></li>
               </ul>
