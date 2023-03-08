@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBeer } from 'react-icons/fa';
 import { BsFacebook , BsYoutube} from 'react-icons/bs';
 import { AiFillTwitterCircle} from 'react-icons/ai';
+import axios from "axios";
 
 export default function Contactus() {
+  const [state,setstate]=useState({
+    email:"",
+    name:"",
+    subject:"",
+    desc:""
+  });
+
+  let handler =(e)=>{
+    const{name, value}=e.target    
+        
+
+    setstate({
+   
+      ...state,[name]:value
+
+
+    })
+
+
+  }
+
   return (
     <div>
       <div className="titlebox ">
@@ -28,21 +50,41 @@ export default function Contactus() {
           <div className="formGetInTouch">
             <div className="container mt-3 text-start">
               <h3 className="mt-4">Get In Touch</h3>
-              <form className="p-4">
+              <div className="p-4">
                 <div className="mb-4">
-                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="name" onChange={(e)=>{}} />
+                  <input type="text" name="name" value={state.name} class="form-control" id="exampleInputPassword1" placeholder="name" onChange={handler} />
                 </div>
                 <div className="mb-3">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="email" />
+                  <input type="email" name="email"
+                  value={state.email} class="form-control" id="exampleInputEmail1" placeholder="email" onChange={handler} />
                 </div>
                 <div className="mb-3">
-                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="subject" />
+                  <input type="text" name="subject" value={state.subject} class="form-control" id="exampleInputPassword1" placeholder="subject" onChange={handler} />
                 </div>
                 <div class="form-floating">
-                  <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea"></textarea>
+                <input
+                   name="desc" 
+                   type="textarea"
+
+                    class="form-control"
+                    
+                    placeholder="Leave a message here"
+                    id="floatingTextarea" onChange={handler}/>
                 </div>
-                <button type="submit" class="btn btn-primary m-4">Send Message</button>
-              </form>
+                <button onClick={()=>{
+                  axios.post( url.server+"/Contactus/contactus",state).then((res) => {
+                             
+                    alert("Your Response is Submitted We will get back to you")
+               
+
+                  })
+                  
+                }}class="btn btn-primary m-4">
+                Submit
+                </button>
+                {/* <button type="submit" class="btn btn-primary m-4">Send Message</button> */}
+
+              </div>
             </div>
           </div>
 

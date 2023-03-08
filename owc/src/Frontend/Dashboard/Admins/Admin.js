@@ -17,6 +17,7 @@ const history=useHistory()
 const [totaluser,  Setuser]=useState(0)
  const [regest,setregs]=useState(0)
  const email= sessionStorage.getItem("email");
+ const name=sessionStorage.getItem("name");
  useEffect(()=>{
   axios.get( url.server+'/User/count').then((res)=>{
    
@@ -48,7 +49,7 @@ const [totaluser,  Setuser]=useState(0)
         <ul class="sidebar-list">
           <li class="sidebar-list-item">
             <a href="#" target="_blank">
-              <span class="material-icons-outlined"></span> Welcome brother !!!
+              <span class="material-icons-outlined"></span> Welcome {name}
             </a>
           </li>
           <li class="sidebar-list-item">
