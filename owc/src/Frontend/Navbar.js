@@ -25,7 +25,7 @@ export default function Navbar1() {
     <Navbar bg="black" expand="lg">
     <Container>
    
-  <label> <NavbarBrand onClick={()=>{history.push('home')}} style={{"font-family": 'Source Serif Pro', 'fontSize':'2.5rem',color:'White'}} >One Who Creates</NavbarBrand>
+  <label> <NavbarBrand onClick={()=>{history.push('home')}} style={{"font-family": 'Source Serif Pro', 'fontSize':'2rem',color:'White'}} >{<img src={require("../logo2.png")} width="70px" height="50px"></img> }One Who Creates</NavbarBrand>
   </label>
       <Navbar.Toggle  className="btn btn-danger"  aria-controls="basic-navbar-nav" style={{color:"white"}} />
       <Navbar.Collapse  id="basic-navbar-nav" variant="light">
@@ -157,14 +157,6 @@ export default function Navbar1() {
 
 
 
-{/*     
-
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-
-*/}
 
 
 

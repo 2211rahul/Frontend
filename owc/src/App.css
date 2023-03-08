@@ -250,7 +250,7 @@ body {
 
 .firstaboutbox{
   /* background-color: rgb(171, 241, 236); */
-  background-image: url(https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/about-us-min.jpg);
+  background-image: url("./images/office.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -300,3 +300,27 @@ body {
 .mebemname{
   background-color:#eaf7fc;
 }
+
+
+.navbar-expand-lg .navbar-nav {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.loginpage{
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid red; */
+  background-image: url("./images/office.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: wheat;
+  opacity: 0.4;
+  z-index: 32;
+  /* height: 40vh; */
+}
+

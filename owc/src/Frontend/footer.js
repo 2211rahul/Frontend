@@ -8,16 +8,14 @@ export default function footer() {
   return (
     <>
 
-
-
       <footer className="site-footer">
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-6">
               <h6>About</h6>
-              <p className="text-justify"><i>OWC</i> is a leading provider of rental spaces for Offices, Restarunts, and special occasions. We specialize in offering unique, customizable spaces that meet the needs of a variety of clients, from individuals planning a small party to large corporations hosting a conference.</p>
-              <p><b>Email : </b>owc.contract@gmail.com</p>
-              <p><b>Ph : +91</b>...</p>
+              <p className="text-justify"><i>OWC</i> is a leading provider of rental spaces for Offices, Restarunts, and Special occasions. We specialize in offering unique, customizable spaces that meet the needs of a variety of clients, from individuals planning a small party to large corporations hosting a conference.</p>
+              <p><b>Email : </b>owccontactus@gmail.com</p>
+              {/* <p><b>Ph : +91</b>...</p> */}
             </div>
 
             <div className="col-xs-6 col-md-3">
@@ -64,10 +62,6 @@ export default function footer() {
           </div>
         </div>
       </footer>
-
-
-
-
 
     </>
   )

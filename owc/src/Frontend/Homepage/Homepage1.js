@@ -6,6 +6,7 @@ import { GiOfficeChair } from "react-icons/gi";
 import { IoRestaurantSharp } from "react-icons/io5";
 import { ImBooks } from "react-icons/im";
 import Testimonial from "../Testimonial/testimonial";
+import url from "../../config";
 export default function Homepage1() {
   return (
     <div>
@@ -25,17 +26,18 @@ export default function Homepage1() {
       <div  style={{borderColor:'black'}}className="container overflow-hidden">
         <div style={{}} className=" ">
         <iframe align='right' src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3782.460672985869!2d73.95931581468889!3d18.553258687389974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1677952322448!5m2!1sen!2sin" width="550" height="740" style={{"border":"0"}} allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <div  style={{borderColor:"black"}}className=" card col-6">
+          <div  style={{borderColor:"black"}}className="officespacebox card col-6 " >
+
             <NavLink className="nav-link active" to="">
               {" "}
               <Link to={"Display"} style={{ color: "black" }}>
                 {" "}
                 <div
-                  style={{ textAlign: "right", fontfa: "san-serif" }}
+                  style={{ textAlign: "center", fontfa: "san-serif" }}
                   className="p-3 border bg-light"
                 >
                   <HiBuildingOffice2
-                    style={{ width: "2.5rem" }}
+                    style={{ width: "4.5rem" }}
                   ></HiBuildingOffice2>{" "}
                   <br></br>Office Spaces
                   <i>&nbsp; Private move-in ready offices</i>
@@ -54,7 +56,7 @@ export default function Homepage1() {
                 <Link to={"Desk"} style={{ color: "black" }}>
                   {" "}
                   <div
-                    style={{ textAlign: "right", fontfa: "san-serif" }}
+                    style={{ textAlign: "center", fontfa: "san-serif" }}
                     className="p-3 border bg-light"
                   >
                     <GiOfficeChair></GiOfficeChair> <br />
@@ -76,7 +78,7 @@ export default function Homepage1() {
                 <Link to={"Restaurant"} style={{ color: "black" }}>
                   {" "}
                   <div
-                    style={{ textAlign: "right", fontfa: "san-serif" }}
+                    style={{ textAlign: "center", fontfa: "san-serif" }}
                     className="p-3 border bg-light"
                   >
                     <IoRestaurantSharp></IoRestaurantSharp> <br />
@@ -98,7 +100,7 @@ export default function Homepage1() {
                 <Link to={"Education"} style={{ color: "black" }}>
                   {" "}
                   <div
-                    style={{ textAlign: "right", fontfa: "san-serif" }}
+                    style={{ textAlign: "center", fontfa: "san-serif" }}
                     className="p-3 border bg-light"
                   >
                     <ImBooks></ImBooks>

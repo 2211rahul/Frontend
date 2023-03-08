@@ -26,39 +26,26 @@ export default function Login() {
  
     return (
     <div>
-        <section className="vh-100">
-  <div className="container-fluid h-custom">
-    <div className="row d-flex justify-content-center align-items-center h-100">
-      <div className="col-md-9 col-lg-6 col-xl-5">
-     
-      </div>
-      <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+<section className="loginpage p-5" >
+  <div >
+    <div className="row d-flex justify-content align-items-center">
+  
+      <div className="col-md-8 col-lg-6 col-xl-4 " >
         <div>
-          <div className="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-            <p className="lead fw-normal mb-0 me-3">Sign in with</p>
-            
-            <Link ><h1 className="p-3"><BsFacebook /></h1></Link>
-           <h1 className="p-3"><BsYoutube /></h1>
-            <Link><h1 className="p-3"><AiFillTwitterCircle /></h1></Link>
-            <h1 className="p-3"><BsApple /></h1>
-            
-
-          </div>
-
-          <div className="divider d-flex align-items-center my-4">
-            <p className="text-center fw-bold mx-3 mb-0">Or</p>
+          <div className="d-flex flex-row align-items-center justify-content-center ">
+            <h2 className="p-3 m-4">Sign in</h2>
           </div>
 
           <div className="form-outline mb-4">
             <input  type="email" id="form3Example3" className="form-control "
                 name="email" value={user.email} onChange={ handler }   placeholder="Enter valid email address" />
-            <label className="form-label" for="form3Example3">Email address</label>
+            {/* <label className="form-label" for="form3Example3">Email address</label> */}
           </div>
 
           <div className="form-outline mb-3">
             <input type="password" id="form3Example4" className="form-control "
            name="password" value={user.password} onChange={handler} placeholder="Enter password" />
-            <label className="form-label" for="form3Example4">Password</label>
+            {/* <label className="form-label" for="form3Example4">Password</label> */}
           </div>
 
           <div className="d-flex justify-content-between align-items-center">
@@ -69,7 +56,7 @@ export default function Login() {
                 Remember me
               </label>
             </div>
-            <Link href="#!" className="text-body" onClick={()=>{history.push('/Forgotpass')}}>Forgot password?</Link>
+            <Link href="#" className="text-body" onClick={()=>{history.push('/Forgotpass')}}>Forgot password?</Link>
           </div>
 
           <div className="text-center text-lg-start mt-4 pt-2">

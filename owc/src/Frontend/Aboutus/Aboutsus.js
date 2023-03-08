@@ -3,6 +3,7 @@ import { FaBuilding } from "react-icons/fa";
 import { BsBank2 } from "react-icons/bs";
 import { RiHomeHeartFill } from "react-icons/ri";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import url from "../../config";
 
 export default function Aboutsus() {
   return (
@@ -25,7 +26,7 @@ export default function Aboutsus() {
           <h3 className=" m-3">About us</h3>
             <h2>We are Leading In the India</h2>
             <div>
-              <p>Welcome to our company, a cutting-edge platform for retail spaces! We are dedicated to providing innovative solutions for retailers, landlords, and startups alike. Our mission is to revolutionize the way people shop by creating immersive and exciting retail environments that are tailored to meet the needs of modern consumers.</p>
+              <p>Welcome to our company, a cutting-edge platform for retail spaces! We are dedicated to providing innovative solutions for retailers, landlords, and startups. Our mission is to revolutionize the way people shop by creating immersive and exciting retail environments that are tailored to meet the needs of modern consumers.</p>
             </div>
           </div>
 
@@ -108,10 +109,9 @@ export default function Aboutsus() {
                 decoding="async"
                 width="100"
                 height="100"
-                src="https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1-150x150.jpg"
                 alt=""
                 loading="lazy"
-                srcset="https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1-150x150.jpg 150w, https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1.jpg 200w"
+                srcset={require("../../images/kp.png")}
                 sizes="(max-width: 150px) 100vw, 150px"
               />
             </div>
@@ -146,13 +146,10 @@ export default function Aboutsus() {
           <div className="elementimage d-flex p-2 flex-row align-items-center">
             <div>
               <img
-                decoding="async"
                 width="100"
                 height="100"
-                src="https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1-150x150.jpg"
-                alt=""
-                loading="lazy"
-                srcset="https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1-150x150.jpg 150w, https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1.jpg 200w"
+                alt="img not found"
+                srcset={require("../../images/swaraj.png")}
                 sizes="(max-width: 150px) 100vw, 150px"
               />
             </div>
@@ -187,13 +184,10 @@ export default function Aboutsus() {
           <div className="elementimage d-flex p-2 flex-row align-items-center">
             <div>
               <img
-                decoding="async"
                 width="100"
                 height="100"
-                src="https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1-150x150.jpg"
-                alt=""
-                loading="lazy"
-                srcset="https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1-150x150.jpg 150w, https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1.jpg 200w"
+                alt="img not found"
+                srcset={require("../../images/rahulimg.png")}
                 sizes="(max-width: 150px) 100vw, 150px"
               />
             </div>
@@ -228,13 +222,11 @@ export default function Aboutsus() {
           <div className="elementimage d-flex p-2 flex-row align-items-center">
             <div>
               <img
-                decoding="async"
                 width="100"
                 height="100"
-                src="https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1-150x150.jpg"
-                alt=""
-                loading="lazy"
-                srcset="https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1-150x150.jpg 150w, https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1.jpg 200w"
+              
+                alt="img not found"
+                srcset={require("../../images/ashitosh.png")}
                 sizes="(max-width: 150px) 100vw, 150px"
               />
             </div>
@@ -269,13 +261,10 @@ export default function Aboutsus() {
           <div className="elementimage d-flex p-2 flex-row align-items-center">
             <div className="projectmember">
               <img
-                decoding="async"
                 width="100"
                 height="100"
-                src=''
-                alt=""
-                loading="lazy"
-                srcset="https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1-150x150.jpg 150w, https://websitedemos.net/local-business-02/wp-content/uploads/sites/832/2021/04/customer-1.jpg 200w"
+                alt="omg not found"
+                srcset={require("../../images/rohitimg.png")}
                 sizes="(max-width: 150px) 100vw, 150px"
               />
             </div>
@@ -285,7 +274,7 @@ export default function Aboutsus() {
           </div>
         </div>
       </div>
-
+{/* 
       <div className="fourthbox text-center m-5">
         <div className="container">
           <div className="m-3">
@@ -305,7 +294,7 @@ export default function Aboutsus() {
             </figure>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
 
   );
