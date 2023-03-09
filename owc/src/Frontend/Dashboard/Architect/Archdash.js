@@ -37,7 +37,7 @@ export default function Archdash() {
             </li>
             
             <li class="sidebar-list-item">
-              <Link to={"/edituser"}>
+              <Link to={"edituser"}>
                 <AiFillSetting></AiFillSetting> &nbsp;  Settings
               </Link>
             </li>
