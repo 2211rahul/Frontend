@@ -23,20 +23,20 @@ export default function footer() {
               <h6>Categories</h6>
               <ul className="footer-links">
                 {/* <li><a href="http://scanfcode.com/category/c-language/">C</a></li> */}
-                <li><a href="https://cdac-project.onrender.com/Display">Office Spaces</a></li>
-                <li><a href="https://cdac-project.onrender.com/Desk">Desk Setups</a></li>
-                <li><a href="https://cdac-project.onrender.com/Restaurant">Restaurant Setups</a></li>
-                <li><a href="https://cdac-project.onrender.com/Education">Educational Classroom Setups</a></li>
-                <li><a href="https://cdac-project.onrender.com/home">Templates</a></li>
+                <li><a href="https://frontend-gold-two.vercel.app/Display">Office Spaces</a></li>
+                <li><a href="https://frontend-gold-two.vercel.app/Desk">Desk Setups</a></li>
+                <li><a href="https://frontend-gold-two.vercel.app/Restaurant">Restaurant Setups</a></li>
+                <li><a href="https://frontend-gold-two.vercel.app/Education">Educational Classroom Setups</a></li>
+                <li><a href="https://frontend-gold-two.vercel.app/home">Templates</a></li>
               </ul>
             </div>
 
             <div className="col-xs-6 col-md-3">
               <h6>Quick Links</h6>
               <ul className="footer-links">
-                <li><a href="https://cdac-project.onrender.com/Aboutus">About Us</a></li>
-                <li><a href="https://cdac-project.onrender.com/Contactus">Contact Us</a></li>
-                <li><a href="https://cdac-project.onrender.com/Contactus">Contribute</a></li>
+                <li><a href="https://frontend-gold-two.vercel.app/Aboutus">About Us</a></li>
+                <li><a href="https://frontend-gold-two.vercel.app/Contactus">Contact Us</a></li>
+                <li><a href="https://frontend-gold-two.vercel.app/Contactus">Contribute</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Sitemap</a></li>
               </ul>
