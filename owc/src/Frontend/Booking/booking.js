@@ -63,7 +63,7 @@ export default function Book() {
 
     &nbsp; 
 
-    <h1 style={{textalign:"centre"}}> Booked Properties</h1>
+    <h1 class="text-center"> Booked Properties</h1>
   
   <hr></hr>
     
@@ -76,13 +76,13 @@ export default function Book() {
       <>
       {
         books==null?
-        <h3>No Bookings</h3>:
-      <div class="card w-75" style={{"width": "18rem","margin":"4%"}}>
+        <h3 style={{textAlign:"center"}}>No Bookings</h3>:
+      <div class="card w-25" style={{"width": "18rem","margin":"4%"}}>
        <div class="card-body">
-       <img  className="card-img-top" src={props.image} />
-         <h5 class="card-title">{props.Propertyname}</h5>
-         <p class="card-text">{props.Propertydesc}</p>
-         <p class="card-text">Booked By = {props.email}</p>
+       <img  className="card-img-top p-3" src={props.image} />
+         <h5 className="card-title">{props.Propertyname}</h5>
+         <p className="card-text">{props.Propertydesc}</p>
+         <p className="card-text">Booked By = {props.email}</p>
          
          <a href="#" class="btn btn-success">Booked </a>
        </div>
