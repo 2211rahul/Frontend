@@ -79,6 +79,7 @@ export default function Login() {
                       sessionStorage.setItem("role",values.role);
                       sessionStorage.setItem("name",values.name);
                       sessionStorage.setItem("phoneno",values.phoneno);
+                      sessionStrorage.setItem("orders",values.orders)
                       if(email===user.email){
                        setvali(true)
                       }

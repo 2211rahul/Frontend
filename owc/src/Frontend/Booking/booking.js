@@ -82,7 +82,7 @@ export default function Book() {
        <img  className="card-img-top p-3" src={props.image} />
          <h5 className="card-title">{props.Propertyname}</h5>
          <p className="card-text">{props.Propertydesc}</p>
-         <p className="card-text">Booked By = {props.email}</p>
+         <p className="card-text">Booked By : {props.email}</p>
          
          <a href="#" class="btn btn-success">Booked </a>
        </div>

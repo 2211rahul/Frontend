@@ -4,6 +4,7 @@ import { FiYoutube,FiFacebook} from 'react-icons/fi';
 import { FaInstagram} from 'react-icons/fa';
 
 import '../App.css'
+import url from '../config';
 export default function footer() {
   return (
     <>
@@ -22,20 +23,20 @@ export default function footer() {
               <h6>Categories</h6>
               <ul className="footer-links">
                 {/* <li><a href="http://scanfcode.com/category/c-language/">C</a></li> */}
-                <li><a href="https://cdac-project.onrender.com/Display">Office Spaces</a></li>
-                <li><a href="https://cdac-project.onrender.com/Desk">Desk Setups</a></li>
-                <li><a href="https://cdac-project.onrender.com/Restaurant">Restaurant Setups</a></li>
-                <li><a href="https://cdac-project.onrender.com/Education">Educational Classroom Setups</a></li>
-                <li><a href="https://cdac-project.onrender.com/home">Templates</a></li>
+                <li><a href={url.server+"/Display"}>Office Spaces</a></li>
+                <li><a href={url.server+"/Desk"}>Desk Setups</a></li>
+                <li><a href={url.server+"/Restaurant"}>Restaurant Setups</a></li>
+                <li><a href={url.server+"/Education"}>Educational Classroom Setups</a></li>
+                <li><a href={url.server+"/home"}>Templates</a></li>
               </ul>
             </div>
 
             <div className="col-xs-6 col-md-3">
               <h6>Quick Links</h6>
               <ul className="footer-links">
-                <li><a href="https://cdac-project.onrender.com/Aboutus">About Us</a></li>
-                <li><a href="https://cdac-project.onrender.com/Contactus">Contact Us</a></li>
-                <li><a href="https://cdac-project.onrender.com/Contactus">Contribute</a></li>
+                <li><a href={url.server+"/Aboutus"}>About Us</a></li>
+                <li><a href={url.server+"/Contactus"}>Contact Us</a></li>
+                <li><a href={url.server+"/Contactus"}>Contribute</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Sitemap</a></li>
               </ul>
