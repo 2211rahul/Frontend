@@ -13,7 +13,7 @@ export default function ForgotPassword() {
        let jsondata={
             email:emailval
         }
-        axios.post( url.server+"/Reset/Changepass",jsondata).then((res) => {
+        axios.post(url.server+"/Reset/Changepass",jsondata).then((res) => {
                     let value = res.data
                       if (value === "sucess") {
                         alert("😵‍💫😵‍💫 Email Send On Please check it")

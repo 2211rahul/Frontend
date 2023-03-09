@@ -14,7 +14,7 @@ export default function Archdash() {
   
   const email = sessionStorage.getItem("email");
   const name=sessionStorage.getItem("name");
-
+  const orders=sessionStorage.getItem("orders");
   return (
     <div>
       
@@ -47,15 +47,20 @@ export default function Archdash() {
                 <FcBookmark></FcBookmark>&nbsp; Bookings
               </Link>
             </li>
-
+           {orders==false?
             <li class="sidebar-list-item">
             <Link to={"/order"}  >
               <MdInventory2></MdInventory2> &nbsp; Orders
             </Link>
           </li>
-
+           :
+          <li class="sidebar-list-item">
+            <Link to={"/add"}>Add Properties
+             + &nbsp; 
+            </Link>
+          </li>
             
-
+           }
           </ul>
         </aside>
 
