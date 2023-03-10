@@ -76,10 +76,11 @@ export default function Login() {
                       value=res.data
                       const{email,...values}=value
                       sessionStorage.setItem("email",email)
+                    
                       sessionStorage.setItem("role",values.role);
                       sessionStorage.setItem("name",values.name);
                       sessionStorage.setItem("phoneno",values.phoneno);
-                      sessionStrorage.setItem("orders",values.orders)
+                      sessionStorage.setItem("orders",values.orders)
                       if(email===user.email){
                        setvali(true)
                       }
