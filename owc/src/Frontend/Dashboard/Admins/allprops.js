@@ -56,7 +56,7 @@ export default function Allprops() {
         } 
         })
           }}   className="btn btn-outline-danger">delete</button>&nbsp;&nbsp;&nbsp;
-          <Link  usehref={proper.prize} className="btn btn-outline-warning">Update</Link>
+     
           <br></br>
           &nbsp;
           &nbsp;
