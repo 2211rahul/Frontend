@@ -18,7 +18,7 @@ export default function Properties() {
         console.log(token,e);
  }
   const  getproperties= async()=>{
-    await axios.get(url.server+"/Property/Officespaces").then((res)=>setprop(res.data)).catch((err)=>console.log(err))
+    await axios.get(url.server+"/Property/restaurant").then((res)=>setprop(res.data)).catch((err)=>console.log(err))
              
   }
 
