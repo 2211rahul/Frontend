@@ -62,6 +62,8 @@ export default function Navbar1() {
         onClick={() => {
           sessionStorage.removeItem("email")
           sessionStorage.removeItem("role")
+          sessionStorage.removeItem("orders")
+          sessionStorage.removeItem("name")
           history.push("/home")
           window.location.reload(true)
         }}

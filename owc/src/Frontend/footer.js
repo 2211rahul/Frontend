@@ -18,7 +18,7 @@ export default function footer() {
               <p><b>Email : </b>owccontactus@gmail.com</p>
               {/* <p><b>Ph : +91</b>...</p> */}
             </div>
-
+ 
             <div className="col-xs-6 col-md-3">
               <h6>Categories</h6>
               <ul className="footer-links">
